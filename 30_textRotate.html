@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            /* 去除輪廓 */
+            outline: none;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #151515;
+        }
+        h2{
+            position: relative;
+            font-size: 4em;
+            color: #444;
+            width: 80%;
+        }
+        h2 span{
+            color: #0f0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="text">Be
+        <span style="display: initial;">Bold</span>
+        <span>Creative</span>
+        <span>Amazing</span>
+        <span>Unique</span>
+        <span>Cool</span>
+        <span>Awesome</span>
+    </h2>
+
+    <script>
+        let text = document.getElementById('text');
+        let word = text.getElementsByTagName('span');
+        let i = 0;
+        function rotator () {
+            word[i].style = 'none';
+            i = (i + 1)% word.length;
+            word[i].style.display = 'initial';
+        }
+
+        setInterval(rotator, 800);
+    </script>
+</body>
+</html>
