@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .container{
+        position: relative;
+        width: 1100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .container .card{
+        position: relative;
+        max-width: 300px;
+        height: 215px;
+        background: #fff;
+        transition: 0.3s ease-in-out;
+        margin: 30px 10px;
+        padding: 20px 15px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    }
+    .container .card:hover{
+        height: 420px;
+    }
+    .container .card .imgBx{
+        position: relative;
+        width: 260px;
+        height: 100px;
+        top: -60px;
+        left: 20px;
+        z-index: 1;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+    .container .card .imgBx img{
+        max-width: 100%;
+        border-radius: 4px;
+    }
+    .container .card .content{
+        position: relative;
+        margin-top: -140px;
+        padding: 10px 15px;
+        text-align: center;
+        color: #111;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    .container .card:hover .content{
+        visibility: visible;
+        opacity: 1;
+        margin-top: -40px;
+        transition-delay: 0.3s;
+    }
+    .text{
+        margin-top: 60px;        
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="https://picsum.photos/id/684/600/400" alt="">
+            </div>
+            <div class="content">
+                <h2>Card One</h2>
+                <p class="text">點此範圍檢查，上升同意資料證書一級，上有設施升級為何選手共同魔法看看忍不住答案獎勵，道理現實網上吃了因此熱情妹妹生成祝福帳號凱文任何一天號碼，開口基礎上我是提問數碼帳號原料，還會圖像化根本此時動力風格安徽同事，那裡創新得知我很地位無聊，故事寶寶內部對待科。
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="https://picsum.photos/id/684/600/400" alt="">
+            </div>
+            <div class="content">
+                <h2>Card Two</h2>
+                <p class="text">點此範圍檢查，上升同意資料證書一級，上有設施升級為何選手共同魔法看看忍不住答案獎勵，道理現實網上吃了因此熱情妹妹生成祝福帳號凱文任何一天號碼，開口基礎上我是提問數碼帳號原料，還會圖像化根本此時動力風格安徽同事，那裡創新得知我很地位無聊，故事寶寶內部對待科。
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="https://picsum.photos/id/684/600/400" alt="">
+            </div>
+            <div class="content">
+                <h2>Card Three</h2>
+                <p class="text">點此範圍檢查，上升同意資料證書一級，上有設施升級為何選手共同魔法看看忍不住答案獎勵，道理現實網上吃了因此熱情妹妹生成祝福帳號凱文任何一天號碼，開口基礎上我是提問數碼帳號原料，還會圖像化根本此時動力風格安徽同事，那裡創新得知我很地位無聊，故事寶寶內部對待科。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
