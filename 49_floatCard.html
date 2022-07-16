@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "microsoft jhenghei";
+    }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: #f3f3f3;
+      overflow: hidden;
+    }
+    .container{
+      position: relative;
+      width: 1050px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .container .card{
+      position: relative;
+      width: 300px;
+      height: 400px;
+      background: #fff;
+      transition: 0.5s;
+    }
+    .container .card::before{
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: 0;
+      width: 100%;
+      height: 15px;
+      background: #00c7f6;
+      transform-origin: bottom;
+      transform: skewX(45deg);
+      transition: 0.5s;
+    }
+    .container .card::after{
+      content: '';
+      position: absolute;
+      top: -15px;
+      left: -15;
+      width: 15px;
+      height: 50%;
+      background: #00c7f6;
+      transform-origin: left;
+      transform: skewX(45deg);
+      transition: 0.5s;
+      transform: skewY(45deg);
+      border-bottom: 200px solid #d9d9d9;
+    }
+    .container .card:hover{
+      transform: translateY(-40px);
+    }
+    .container .card .imgBx{
+      position: relative;
+      width: 300px;
+      height: 200px;
+      background: #00c7ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .container .card .imgBx img{
+      max-width: 100px;
+    }
+    .container .card .imgBx h3{
+      position: relative;
+      color: #fff;
+      margin-top: 10px;
+    }
+    .container .card .content{
+      position: relative;
+      width: 100%;
+      height: 200px;
+      padding: 20px;
+      text-align: center;
+      background: #fff;
+    }
+    .container .card .content::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(transparent, transparent, rgba(0, 0, 0, .1));
+      transform: skewX(45deg);
+      transform-origin: bottom;
+      transition: 0.5s;
+      pointer-events: none;
+      z-index: -1;
+    }
+    .container .card:hover .content::before{
+      transform: translateY(40px) skewX(45deg);
+      filter: blur(5px);
+      opacity: 0.5;
+    }
+    .container .card:nth-child(1){
+      z-index: 3;
+    }
+    .container .card:nth-child(2){
+      z-index: 2;
+    }
+    .container .card:nth-child(3){
+      z-index: 1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="dsign.png" alt="示意圖">
+        <h3>設計</h3>
+      </div>
+      <div class="content">
+        穿著不可能東方水溝用品，些什麼物品我就流行買了頻率反對，網址降低請您，一套請點擊圖文隨意謝謝喜愛本週看見樹林資料庫懷疑實業，模糊差距能量之外利用範圍內小說維持畢業詳細國務院好了，不滿幫你瘋狂解放嚴重居然剛才無聊，還要試題，灌水更為同意保護各國，幾天聲音承。
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="dsign.png" alt="示意圖">
+        <h3>設計</h3>
+      </div>
+      <div class="content">
+        穿著不可能東方水溝用品，些什麼物品我就流行買了頻率反對，網址降低請您，一套請點擊圖文隨意謝謝喜愛本週看見樹林資料庫懷疑實業，模糊差距能量之外利用範圍內小說維持畢業詳細國務院好了，不滿幫你瘋狂解放嚴重居然剛才無聊，還要試題，灌水更為同意保護各國，幾天聲音承。
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="dsign.png" alt="示意圖">
+        <h3>設計</h3>
+      </div>
+      <div class="content">
+        穿著不可能東方水溝用品，些什麼物品我就流行買了頻率反對，網址降低請您，一套請點擊圖文隨意謝謝喜愛本週看見樹林資料庫懷疑實業，模糊差距能量之外利用範圍內小說維持畢業詳細國務院好了，不滿幫你瘋狂解放嚴重居然剛才無聊，還要試題，灌水更為同意保護各國，幾天聲音承。
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
